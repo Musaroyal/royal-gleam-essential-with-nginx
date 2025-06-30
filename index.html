@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>royal gleam essential</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+
+    /* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #1a1a1a;
+}
+
+/* Grid layout */
+.grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1em;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: 3em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>
+<body>
+    <header></header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+    </nav>
+    <div class="container">
+        <h2>Royal gleam essentials</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/kgbkjbkb.jpg" alt="">
+                <h3>Standard products</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/71x65ipBvL._AC_SL1500_-96079c7b1bc9449ba4a904e76dd90694.jpg" alt="">
+                <h3>customizable products</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; royal gleam essentials. All rights reserved.</p>
+        <p>Follow us on: </p>
+        <a href="#" style="color: #3b5998;">Linkedln</a>
+        <a href="#" style="color: #00aced;">Facebook</a>
+        <a href="#" style="color: #e4405f;">Insta</a>
+    </footer>
+</body>
+</html>
