@@ -1,18 +1,20 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
 
-// Serve static images
+
+const replicaApp = process.env.APP_NAME
+
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// Serve the HTML file
-app.get('/', (req, res) => {
+
+app.use('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
-    console.log("Request served by node app");
+    console.log(`Request served by ${replicaApp}`);
 });
 
-// Start the server
+
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Node app is listening on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
